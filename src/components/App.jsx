@@ -31,7 +31,7 @@ export const App = () => {
   };
   return (
     <div>
-      <Section title="PhoneBook -> Hook">
+      <Section title="PhoneBook">
         <PhoneBookForm onInputContact={onInputContact} />
       </Section>
 
