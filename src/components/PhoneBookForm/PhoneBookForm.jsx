@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import { Form } from './PhoneBookForm.styled';
-import { Button } from 'components/ContactsList/ContactList.styled';
+import { Button, Form } from './PhoneBookForm.styled';
 import InputName from '../InputName/InputName';
 
 const PhoneBookForm = ({ onInputContact }) => {

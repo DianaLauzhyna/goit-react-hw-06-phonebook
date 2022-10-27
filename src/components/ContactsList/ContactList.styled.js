@@ -1,29 +1,36 @@
 import styled from '@emotion/styled';
 
 export const Button = styled.button`
-  padding: 5px;
-  background-color: hotpink;
-  font-size: 15px;
-  border-radius: 4px;
-  color: black;
+  padding: 1rem;
+  font-size: 2rem;
   font-weight: bold;
-  &:hover {
-    color: white;
+  background: #dc143c;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+`;
+export const List = styled.ul``;
+
+export const ListItem = styled.li`
+  &::before {
+    content: '📞';
+    margin-right: 0.5rem;
+    vertical-align: 0.25rem;
+    font-size: 1.5rem;
   }
 `;
-export const Ul = styled.ul`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  flex-grow: 1;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  height: 280px;
-  overflow: scroll;
+export const ButtonDelete = styled.button`
+  padding: 0.5rem;
+  vertical-align: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #7b68ee;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 `;
-export const Li = styled.li`
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+export const ContactText = styled.span`
+  display: inline-block;
+  margin-right: 1rem;
+  min-width: 25rem;
 `;

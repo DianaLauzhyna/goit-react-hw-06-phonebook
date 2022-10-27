@@ -1,9 +1,10 @@
 import PhoneBookForm from './PhoneBookForm/PhoneBookForm';
 import ContactsList from './ContactsList/ContactsList';
-import Section from './Section/Section';
+import {Section, SectionHeader} from './Section/Section';
 import InputSearch from './InputSearch/InputSearch';
 import { useDispatch, useSelector } from 'react-redux';
 import { getContacts, getFilter } from 'redux/selectors';
+import { Wrapper } from './App.styled';
 import {
   getAddContact,
   getDeleteContact,
@@ -30,12 +31,12 @@ export const App = () => {
     dispatch(getDeleteContact(id));
   };
   return (
-    <div>
+    <Wrapper>
       <Section title="PhoneBook">
         <PhoneBookForm onInputContact={onInputContact} />
       </Section>
 
-      <Section title="Contacts">
+      <SectionHeader title="Contacts"/>
         <InputSearch
           nameSearch="Find contacts by name"
           onSearchName={findByName}
@@ -44,7 +45,6 @@ export const App = () => {
           onClickDelete={onClickDelete}
           contacts={filter === '' ? contacts : filter}
         />
-      </Section>
-    </div>
+    </Wrapper>
   );
 };

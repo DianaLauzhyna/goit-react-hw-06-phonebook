@@ -1,16 +1,18 @@
 import styled from '@emotion/styled';
 
-export const SectionStyled = styled.section`
-  width: 800px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 15px;
-  border-radius: 20px;
-  border: 2px solid blueviolet;
-  margin-bottom: 20px;
+export const SectionStyle = styled.h2`
+margin-bottom: 0.5rem;
+font-size: 3rem;
 `;
-export const TitleSection = styled.h1`
-  width: fit-content;
-  margin: 0 auto 20px;
-  color: #256988;
+
+export const PageHeader = styled.h1`
+  margin-bottom: 1rem;
+  font-size: 4rem;
+
+  &::before {
+    content: "☎️";
+    margin-right: 1rem;
+    vertical-align: 0.5rem;
+    font-size: 3rem;
+  }
 `;

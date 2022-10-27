@@ -1,9 +1,8 @@
 import styled from '@emotion/styled';
 
 export const Label = styled.label`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
 `;
 export const Span = styled.span`
   display: block;
@@ -11,12 +10,10 @@ export const Span = styled.span`
 `;
 
 export const Input = styled.input`
-  background-color: #d160a7b8;
-  color: black;
-  display: block;
-  width: 300px;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  padding: 10px;
+width: 20rem;
+padding: 0.5rem;
+font-size: 1.5rem;
+margin-bottom: 1.5rem;
+border-radius: 0.5rem;
+box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 `;

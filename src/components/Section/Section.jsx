@@ -1,18 +1,29 @@
 import PropTypes from 'prop-types';
-import { SectionStyled, TitleSection } from './Section.styled';
+import {  SectionStyle, PageHeader } from './Section.styled';
 
-const Section = ({ title, children }) => {
+export const Section = ({ title, children }) => {
   return (
-    <SectionStyled>
-      <TitleSection>{title}</TitleSection>
+<>
+      <PageHeader>{title}</PageHeader>
       {children}
-    </SectionStyled>
+  </>
   );
 };
+
+export const SectionHeader = ({title}) => {
+  return (
+    <SectionStyle>{title}</SectionStyle>
+  )
+};
+
 
 Section.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.any.isRequired,
 };
 
-export default Section;
+SectionHeader.propTypes ={
+  title: PropTypes.string.isRequired,
+}
+
+
