@@ -31,5 +31,16 @@ export const contactsReducer = createReducer(initialState, {
     state.filter = state.contacts.filter(contact =>
       contact.name.toLocaleLowerCase().includes(action.payload)
     );
+    // without mutation
+    // return {
+    //   ...state,
+    //   filter: '',
+    // };
+    // return {
+    //   ...state,
+    //   filter: state.contacts.filter(contact =>
+    //     contact.name.toLocaleLowerCase().includes(action.payload)
+    //   ),
+    // };
   },
 });
