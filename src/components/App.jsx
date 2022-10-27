@@ -1,11 +1,8 @@
-// import { nanoid } from 'nanoid';
-// import React, { useState, useEffect } from 'react';
 import PhoneBookForm from './PhoneBookForm/PhoneBookForm';
 import ContactsList from './ContactsList/ContactsList';
 import Section from './Section/Section';
 import InputSearch from './InputSearch/InputSearch';
 import { useDispatch, useSelector } from 'react-redux';
-// import { getAddContact, getDeleteContact, getFindByName } from 'redux/action';
 import { getContacts, getFilter } from 'redux/selectors';
 import {
   getAddContact,
