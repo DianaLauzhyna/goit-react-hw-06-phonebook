@@ -12,9 +12,11 @@ import {
 } from 'redux/contactsSlice';
 export const App = () => {
   const contacts = useSelector(getContacts);
-  const filter = useSelector(getFilter);
+  console.log(contacts);
+  let filter = useSelector(getFilter);
   const dispatch = useDispatch();
-
+  if (filter === undefined) { filter=''}
+  console.log(filter);
   const onInputContact = user => {
     if (contacts.some(contact => contact.name === user.name)) {
       return alert(`${user.name} is already in contacts.`);
